@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "a8ba0fec-db44-4c1d-bc07-f3fead846b42",
+		"name": "SolisPC01 API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43362041",
+		"_collection_link": "https://grey-water-655472.postman.co/workspace/DPA-202501-DAW~ddd57f34-4270-4426-83bf-50fd7a1e2663/collection/43362041-a8ba0fec-db44-4c1d-bc07-f3fead846b42?action=share&source=collection_link&creator=43362041"
+	},
+	"item": [
+		{
+			"name": "Get All Canchas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5155/api/Canchas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5155",
+					"path": [
+						"api",
+						"Canchas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Canchas by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5155/api/Canchas/:ID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5155",
+					"path": [
+						"api",
+						"Canchas",
+						":ID"
+					],
+					"variable": [
+						{
+							"key": "ID",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Cancha",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Cancha 11\",\r\n    \"tipo\": \"Fútbol\",\r\n    \"ubicación\": \"Calle 10 de Agosto 202\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5155/api/Canchas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5155",
+					"path": [
+						"api",
+						"Canchas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Cancha",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 11,\r\n    \"nombre\": \"Cancha 11\",\r\n    \"tipo\": \"Fútbol\",\r\n    \"ubicación\": \"Av.Lurigancho 540\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5155/api/Canchas/:ID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5155",
+					"path": [
+						"api",
+						"Canchas",
+						":ID"
+					],
+					"variable": [
+						{
+							"key": "ID",
+							"value": "11"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cancha",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5155/api/Canchas/:ID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5155",
+					"path": [
+						"api",
+						"Canchas",
+						":ID"
+					],
+					"variable": [
+						{
+							"key": "ID",
+							"value": "11"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

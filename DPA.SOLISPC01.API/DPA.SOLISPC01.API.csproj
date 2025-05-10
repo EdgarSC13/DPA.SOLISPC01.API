@@ -19,4 +19,9 @@
     <ProjectReference Include="..\DPA.SOLISPC01.DOMAIN\DPA.SOLISPC01.DOMAIN.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Query\" />
+    <Folder Include="Postman\" />
+  </ItemGroup>
+
 </Project>
